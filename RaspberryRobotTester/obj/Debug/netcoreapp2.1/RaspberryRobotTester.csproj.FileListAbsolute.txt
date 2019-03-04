@@ -8,3 +8,7 @@ C:\Solutions\RaspberryRobot\RaspberryRobotTester\obj\Debug\netcoreapp2.1\Raspber
 C:\Solutions\RaspberryRobot\RaspberryRobotTester\obj\Debug\netcoreapp2.1\RaspberryRobotTester.AssemblyInfo.cs
 C:\Solutions\RaspberryRobot\RaspberryRobotTester\obj\Debug\netcoreapp2.1\RaspberryRobotTester.dll
 C:\Solutions\RaspberryRobot\RaspberryRobotTester\obj\Debug\netcoreapp2.1\RaspberryRobotTester.pdb
+C:\Solutions\RaspberryRobot\RaspberryRobotTester\bin\Debug\netcoreapp2.1\RaspberryRobotGpio.dll
+C:\Solutions\RaspberryRobot\RaspberryRobotTester\bin\Debug\netcoreapp2.1\RaspberryRobotGpio.pdb
+C:\Solutions\RaspberryRobot\RaspberryRobotTester\obj\Debug\netcoreapp2.1\RaspberryRobotTester.csprojAssemblyReference.cache
+C:\Solutions\RaspberryRobot\RaspberryRobotTester\obj\Debug\netcoreapp2.1\RaspberryRobotTester.csproj.CopyComplete
