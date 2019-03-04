@@ -9,3 +9,4 @@ C:\Solutions\RaspberryRobot\RaspberryRobot\obj\Debug\netcoreapp2.1\RaspberryRobo
 C:\Solutions\RaspberryRobot\RaspberryRobot\obj\Debug\netcoreapp2.1\RaspberryRobot.csproj.CopyComplete
 C:\Solutions\RaspberryRobot\RaspberryRobot\obj\Debug\netcoreapp2.1\RaspberryRobot.dll
 C:\Solutions\RaspberryRobot\RaspberryRobot\obj\Debug\netcoreapp2.1\RaspberryRobot.pdb
+C:\Solutions\RaspberryRobot\RaspberryRobot\obj\Debug\netcoreapp2.1\RaspberryRobot.csprojAssemblyReference.cache

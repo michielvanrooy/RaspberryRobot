@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaspberryRobotGpio", "Raspb
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaspberryRobot", "RaspberryRobot\RaspberryRobot.csproj", "{F750E266-343F-4C29-9AFE-AFA7372E0506}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaspberryRobotWeb", "RaspberryRobotWeb\RaspberryRobotWeb.csproj", "{CC61701D-D02F-4C56-A331-9192CCDCB5F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationDemo", "WebApplicationDemo\WebApplicationDemo.csproj", "{E0E3F30D-1B0A-4A31-B934-8E7AE7E6DC69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaspberryRobotWeb", "RaspberryRobotWeb\RaspberryRobotWeb.csproj", "{C906CC3C-A031-4C74-B288-793043260CEC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +31,14 @@ Global
 		{F750E266-343F-4C29-9AFE-AFA7372E0506}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F750E266-343F-4C29-9AFE-AFA7372E0506}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F750E266-343F-4C29-9AFE-AFA7372E0506}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CC61701D-D02F-4C56-A331-9192CCDCB5F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CC61701D-D02F-4C56-A331-9192CCDCB5F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CC61701D-D02F-4C56-A331-9192CCDCB5F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CC61701D-D02F-4C56-A331-9192CCDCB5F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0E3F30D-1B0A-4A31-B934-8E7AE7E6DC69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0E3F30D-1B0A-4A31-B934-8E7AE7E6DC69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0E3F30D-1B0A-4A31-B934-8E7AE7E6DC69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0E3F30D-1B0A-4A31-B934-8E7AE7E6DC69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C906CC3C-A031-4C74-B288-793043260CEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C906CC3C-A031-4C74-B288-793043260CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C906CC3C-A031-4C74-B288-793043260CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C906CC3C-A031-4C74-B288-793043260CEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
