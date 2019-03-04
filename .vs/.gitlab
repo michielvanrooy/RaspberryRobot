@@ -1,0 +1,13 @@
+{
+  "User": {
+    "Id": 2027830,
+    "Username": "michielvanrooy",
+    "Name": "Michiel van Rooy",
+    "Email": "michielvanrooy@gmail.com",
+    "AvatarUrl": "https://secure.gravatar.com/avatar/28b3597106607dc1e7f316baf4e0bd7d?s=80&d=identicon",
+    "PrivateToken": "6ebb6446a611e62eeb6ca564b23722ba44e8cb265436e9b983f3fd1479fe08fa",
+    "Host": "https://gitlab.com/",
+    "TwoFactorEnabled": false,
+    "ApiVersion": 3
+  }
+}
