@@ -1,0 +1,10 @@
+C:\Solutions\RaspberryRobot\RaspberryRobotTester\bin\Debug\netcoreapp2.1\RaspberryRobotTester.deps.json
+C:\Solutions\RaspberryRobot\RaspberryRobotTester\bin\Debug\netcoreapp2.1\RaspberryRobotTester.runtimeconfig.json
+C:\Solutions\RaspberryRobot\RaspberryRobotTester\bin\Debug\netcoreapp2.1\RaspberryRobotTester.runtimeconfig.dev.json
+C:\Solutions\RaspberryRobot\RaspberryRobotTester\bin\Debug\netcoreapp2.1\RaspberryRobotTester.dll
+C:\Solutions\RaspberryRobot\RaspberryRobotTester\bin\Debug\netcoreapp2.1\RaspberryRobotTester.pdb
+C:\Solutions\RaspberryRobot\RaspberryRobotTester\obj\Debug\netcoreapp2.1\RaspberryRobotTester.csproj.CoreCompileInputs.cache
+C:\Solutions\RaspberryRobot\RaspberryRobotTester\obj\Debug\netcoreapp2.1\RaspberryRobotTester.AssemblyInfoInputs.cache
+C:\Solutions\RaspberryRobot\RaspberryRobotTester\obj\Debug\netcoreapp2.1\RaspberryRobotTester.AssemblyInfo.cs
+C:\Solutions\RaspberryRobot\RaspberryRobotTester\obj\Debug\netcoreapp2.1\RaspberryRobotTester.dll
+C:\Solutions\RaspberryRobot\RaspberryRobotTester\obj\Debug\netcoreapp2.1\RaspberryRobotTester.pdb
