@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Solutions\\RaspberryRobot\\RaspberryRobot\\RaspberryRobot.csproj",
-      "projectName": "RaspberryRobot",
-      "projectPath": "C:\\Solutions\\RaspberryRobot\\RaspberryRobot\\RaspberryRobot.csproj",
+      "projectUniqueName": "C:\\Solutions\\RaspberryRobot\\RaspberryRobotTester\\RaspberryRobotTester.csproj",
+      "projectName": "RaspberryRobotTester",
+      "projectPath": "C:\\Solutions\\RaspberryRobot\\RaspberryRobotTester\\RaspberryRobotTester.csproj",
       "packagesPath": "C:\\Users\\User-PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Solutions\\RaspberryRobot\\RaspberryRobot\\obj\\",
+      "outputPath": "C:\\Solutions\\RaspberryRobot\\RaspberryRobotTester\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

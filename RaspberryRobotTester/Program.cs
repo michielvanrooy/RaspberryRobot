@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace RaspberryRobot
+namespace RaspberryRobotTester
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Raspberry Robot!");
 
             Console.ReadLine();
         }
