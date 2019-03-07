@@ -17,12 +17,19 @@ namespace RaspberryRobotGpio
 
         private void Init()
         {
+            //TODO: Implemetn check if port is already open
+
+
+
             File.WriteAllText($"{gpioPath}export", PinNumber.ToString());
             File.WriteAllText($"{gpioPath}gpio{PinNumber.ToString()}/direction", "out");
         }
 
         public void WritePin(PinValue value)
         {
+            //TODO: Check if gpio is open, if not then open
+
+
             var valueStr = ((byte)value).ToString();
             File.WriteAllText($"{gpioPath}gpio{PinNumber.ToString()}/value", valueStr);
         }
