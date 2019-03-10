@@ -29,9 +29,6 @@ namespace RaspberryRobotGpio
 
         public void WritePin(PinValue value)
         {
-            //TODO: Check if gpio is open, if not then open
-
-
             var valueStr = ((byte)value).ToString();
             File.WriteAllText($"{gpioPath}gpio{PinNumber.ToString()}/value", valueStr);
         }

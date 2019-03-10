@@ -6,42 +6,26 @@ using System.Threading;
 using System.Threading.Tasks;
 using Logger;
 using Microsoft.AspNetCore.Mvc;
+using RaspberryRobot;
 using RaspberryRobotGpio;
 using WebApplicationDemo.Models;
 
 namespace WebApplicationDemo.Controllers
 {
+    //TODO: Castle Windosor
+
     public class HomeController : Controller
     {
-        private const int redPin = 18;
-        private const int yellowPin = 19;
-        private const int greenPin = 20;
-        private const int bluePin = 21;
-
-        //private const int sleepDelay = 3000;
-
-
-        //private GpioController gpioRed = new GpioController(redPin);
-        //private IGpioController gpioRed;
-
-        public HomeController()
-        {
-            //gpioRed = new GpioController(redPin);
-            //this.gpioRed = new GpioController(redPin);
-        }
-
         public IActionResult Index()
         {
             return View();
         }
 
-
-
         [HttpPost]
         public IActionResult PostRed()
         {
-            var gpio = new GpioController(redPin);
-            gpio.WritePin(RaspberryRobotGpio.Enums.PinValue.High);
+            var robot = new Robot();
+            robot.RedLED(true);
 
             return View("Index");
         }
@@ -50,20 +34,17 @@ namespace WebApplicationDemo.Controllers
         public IActionResult PostRedRelease()
         {
 
-            var gpio = new GpioController(redPin);
-            gpio.WritePin(RaspberryRobotGpio.Enums.PinValue.Low);
-
+            var robot = new Robot();
+            robot.RedLED(false);
 
             return View("Index");
         }
 
-
-
         [HttpPost]
         public IActionResult PostYellow()
         {
-            var gpio = new GpioController(yellowPin);
-            gpio.WritePin(RaspberryRobotGpio.Enums.PinValue.High);
+            var robot = new Robot();
+            robot.YellowLED(true);
 
             return View("Index");
         }
@@ -71,8 +52,8 @@ namespace WebApplicationDemo.Controllers
         [HttpPost]
         public IActionResult PostYellowRelease()
         {
-            var gpio = new GpioController(yellowPin);
-            gpio.WritePin(RaspberryRobotGpio.Enums.PinValue.Low);
+            var robot = new Robot();
+            robot.YellowLED(false);
 
             return View("Index");
         }
@@ -80,8 +61,8 @@ namespace WebApplicationDemo.Controllers
         [HttpPost]
         public IActionResult PostGreen()
         {
-            var gpio = new GpioController(greenPin);
-            gpio.WritePin(RaspberryRobotGpio.Enums.PinValue.High);
+            var robot = new Robot();
+            robot.GreenLED(true);
 
             return View("Index");
         }
@@ -90,8 +71,8 @@ namespace WebApplicationDemo.Controllers
         [HttpPost]
         public IActionResult PostGreenRelease()
         {
-            var gpio = new GpioController(greenPin);
-            gpio.WritePin(RaspberryRobotGpio.Enums.PinValue.Low);
+            var robot = new Robot();
+            robot.GreenLED(false);
 
             return View("Index");
         }
@@ -99,8 +80,8 @@ namespace WebApplicationDemo.Controllers
         [HttpPost]
         public IActionResult PostBlue()
         {
-            var gpio = new GpioController(bluePin);
-            gpio.WritePin(RaspberryRobotGpio.Enums.PinValue.High);
+            var robot = new Robot();
+            robot.BlueLED(true);
 
             return View("Index");
         }
@@ -108,8 +89,8 @@ namespace WebApplicationDemo.Controllers
         [HttpPost]
         public IActionResult PostBlueRelease()
         {
-            var gpio = new GpioController(bluePin);
-            gpio.WritePin(RaspberryRobotGpio.Enums.PinValue.Low);
+            var robot = new Robot();
+            robot.BlueLED(false);
 
             return View("Index");
         }

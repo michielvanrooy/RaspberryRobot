@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Logger\Logger.csproj" />
-    <ProjectReference Include="..\RaspberryRobotGpio\RaspberryRobotGpio.csproj" />
+    <ProjectReference Include="..\RaspberryRobot\RaspberryRobot.csproj" />
   </ItemGroup>
 
 </Project>
