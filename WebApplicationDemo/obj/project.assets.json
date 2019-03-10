@@ -4334,6 +4334,16 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "Logger/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Logger.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Logger.dll": {}
+        }
+      },
       "RaspberryRobotGpio/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
@@ -11502,6 +11512,11 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "Logger/1.0.0": {
+      "type": "project",
+      "path": "../Logger/Logger.csproj",
+      "msbuildProject": "../Logger/Logger.csproj"
+    },
     "RaspberryRobotGpio/1.0.0": {
       "type": "project",
       "path": "../RaspberryRobotGpio/RaspberryRobotGpio.csproj",
@@ -11510,6 +11525,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "Logger >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
       "RaspberryRobotGpio >= 1.0.0"
@@ -11545,6 +11561,9 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
+            "C:\\Solutions\\RaspberryRobot\\Logger\\Logger.csproj": {
+              "projectPath": "C:\\Solutions\\RaspberryRobot\\Logger\\Logger.csproj"
+            },
             "C:\\Solutions\\RaspberryRobot\\RaspberryRobotGpio\\RaspberryRobotGpio.csproj": {
               "projectPath": "C:\\Solutions\\RaspberryRobot\\RaspberryRobotGpio\\RaspberryRobotGpio.csproj"
             }

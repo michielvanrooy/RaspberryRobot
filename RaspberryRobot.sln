@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaspberryRobotTester", "RaspberryRobotTester\RaspberryRobotTester.csproj", "{303F6C04-65F3-4A82-8370-F83717526FF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RaspberryRobotTester", "RaspberryRobotTester\RaspberryRobotTester.csproj", "{303F6C04-65F3-4A82-8370-F83717526FF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaspberryRobotGpio", "RaspberryRobotGpio\RaspberryRobotGpio.csproj", "{634095DF-601E-4E2D-B6A1-96BE4BBA6B9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RaspberryRobotGpio", "RaspberryRobotGpio\RaspberryRobotGpio.csproj", "{634095DF-601E-4E2D-B6A1-96BE4BBA6B9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaspberryRobot", "RaspberryRobot\RaspberryRobot.csproj", "{F750E266-343F-4C29-9AFE-AFA7372E0506}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RaspberryRobot", "RaspberryRobot\RaspberryRobot.csproj", "{F750E266-343F-4C29-9AFE-AFA7372E0506}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationDemo", "WebApplicationDemo\WebApplicationDemo.csproj", "{E0E3F30D-1B0A-4A31-B934-8E7AE7E6DC69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationDemo", "WebApplicationDemo\WebApplicationDemo.csproj", "{E0E3F30D-1B0A-4A31-B934-8E7AE7E6DC69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaspberryRobotWeb", "RaspberryRobotWeb\RaspberryRobotWeb.csproj", "{C906CC3C-A031-4C74-B288-793043260CEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RaspberryRobotWeb", "RaspberryRobotWeb\RaspberryRobotWeb.csproj", "{C906CC3C-A031-4C74-B288-793043260CEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logger", "Logger\Logger.csproj", "{A7620927-8B5A-4E9A-945C-5C88E114781A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{C906CC3C-A031-4C74-B288-793043260CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C906CC3C-A031-4C74-B288-793043260CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C906CC3C-A031-4C74-B288-793043260CEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7620927-8B5A-4E9A-945C-5C88E114781A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7620927-8B5A-4E9A-945C-5C88E114781A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7620927-8B5A-4E9A-945C-5C88E114781A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7620927-8B5A-4E9A-945C-5C88E114781A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -29,3 +29,5 @@ C:\Solutions\RaspberryRobot\WebApplicationDemo\obj\Debug\netcoreapp2.1\WebApplic
 C:\Solutions\RaspberryRobot\WebApplicationDemo\bin\Debug\netcoreapp2.1\RaspberryRobotGpio.dll
 C:\Solutions\RaspberryRobot\WebApplicationDemo\bin\Debug\netcoreapp2.1\RaspberryRobotGpio.pdb
 C:\Solutions\RaspberryRobot\WebApplicationDemo\obj\Debug\netcoreapp2.1\WebApplicationDemo.csprojAssemblyReference.cache
+C:\Solutions\RaspberryRobot\WebApplicationDemo\bin\Debug\netcoreapp2.1\Logger.dll
+C:\Solutions\RaspberryRobot\WebApplicationDemo\bin\Debug\netcoreapp2.1\Logger.pdb

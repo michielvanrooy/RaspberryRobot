@@ -2,7 +2,7 @@
     ViewData["Title"] = "Home Page";
 }
 
-<h1>Hello My Robot 5</h1>
+<h1>Hello My Robot 1</h1>
 
 
 <div class="container">
@@ -11,24 +11,28 @@
         <div class="col-xs-3">
 
             <div id="boxRed" style="width:100%; height:25vh; background-color:red"></div>
-         
+            @*onmousedown="onBoxClicked('red', true)" onmouseup="onBoxClicked('red', false)"*@
+
         </div>
 
         <div class="col-xs-3">
 
             <div id="boxYellow" style="width:100%; height:25vh; background-color:yellow"></div>
+            @*onmousedown="onBoxClicked('yellow', true)" onmouseup="onBoxClicked('yellow', false)"*@
 
         </div>
 
         <div class="col-xs-3">
 
             <div id="boxGreen" style="width:100%; height:25vh; background-color:green"></div>
+            @*onmousedown="onBoxClicked('green', true)" onmouseup="onBoxClicked('green', false)"*@
 
         </div>
 
         <div class="col-xs-3">
 
             <div id="boxBlue" style="width:100%; height:25vh; background-color:blue"></div>
+            @*onmousedown="onBoxClicked('blue', true)" onmouseup="onBoxClicked('blue', false)"*@
 
         </div>
     </div>
@@ -38,91 +42,121 @@
 
 <script>
 
-    //window.addEventListener('load', function () { // on page load
+    window.addEventListener('load', function () { // on page load
 
 
-    document.getElementById("boxRed").addEventListener('touchstart', function (e) {
-        console.log("start");
-        var xhttp = new XMLHttpRequest();
-        xhttp.open("POST", '/Home/PostRed', true);
-        xhttp.send();
+        document.getElementById("boxRed").addEventListener('touchstart', function (e) {
+            console.log("start red");
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("POST", '/Home/PostRed', true);
+            xhttp.send();
 
-        e.preventDefault()
-    }, false);
+            e.preventDefault()
+        }, false);
 
-    document.getElementById("boxRed").addEventListener('touchend', function (e) {
-        console.log("end");
-        var xhttp = new XMLHttpRequest();
-        xhttp.open("POST", '/Home/PostRedRelease', true);
-        xhttp.send();
+        document.getElementById("boxRed").addEventListener('touchend', function (e) {
+            console.log("end red");
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("POST", '/Home/PostRedRelease', true);
+            xhttp.send();
 
-        e.preventDefault()
-    }, false);
+            e.preventDefault()
+        }, false);
 
-    document.getElementById("boxYellow").addEventListener('touchstart', function (e) {
-        var xhttp = new XMLHttpRequest();
-        xhttp.open("POST", '/Home/PostYellow', true);
-        xhttp.send();
-        e.preventDefault()
-    }, false);
+        document.getElementById("boxYellow").addEventListener('touchstart', function (e) {
+            console.log("start yellow");
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("POST", '/Home/PostYellow', true);
+            xhttp.send();
+            e.preventDefault()
+        }, false);
 
-    document.getElementById("boxYellow").addEventListener('touchend', function (e) {
-        var xhttp = new XMLHttpRequest();
-        xhttp.open("POST", '/Home/PostYellowRelease', true);
-        xhttp.send();
-        e.preventDefault()
-    }, false);
+        document.getElementById("boxYellow").addEventListener('touchend', function (e) {
+            console.log("end yellow");
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("POST", '/Home/PostYellowRelease', true);
+            xhttp.send();
+            e.preventDefault()
+        }, false);
 
-    document.getElementById("boxGreen").addEventListener('touchstart', function (e) {
-        var xhttp = new XMLHttpRequest();
-        xhttp.open("POST", '/Home/PostGreen', true);
-        xhttp.send();
-        e.preventDefault()
-    }, false);
+        document.getElementById("boxGreen").addEventListener('touchstart', function (e) {
+            console.log("start green");
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("POST", '/Home/PostGreen', true);
+            xhttp.send();
+            e.preventDefault()
+        }, false);
 
-    document.getElementById("boxGreen").addEventListener('touchend', function (e) {
-        var xhttp = new XMLHttpRequest();
-        xhttp.open("POST", '/Home/PostGreenRelease', true);
-        xhttp.send();
-        e.preventDefault()
-    }, false);
+        document.getElementById("boxGreen").addEventListener('touchend', function (e) {
+            console.log("end green");
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("POST", '/Home/PostGreenRelease', true);
+            xhttp.send();
+            e.preventDefault()
+        }, false);
 
-    document.getElementById("boxBlue").addEventListener('touchstart', function (e) {
-        var xhttp = new XMLHttpRequest();
-        xhttp.open("POST", '/Home/PostBlue', true);
-        xhttp.send();
-        e.preventDefault()
-    }, false);
+        document.getElementById("boxBlue").addEventListener('touchstart', function (e) {
+            console.log("start blue");
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("POST", '/Home/PostBlue', true);
+            xhttp.send();
+            e.preventDefault()
+        }, false);
 
-    document.getElementById("boxBlue").addEventListener('touchend', function (e) {
-        var xhttp = new XMLHttpRequest();
-        xhttp.open("POST", '/Home/PostBlueRelease', true);
-        xhttp.send();
-        e.preventDefault()
-    }, false);
+        document.getElementById("boxBlue").addEventListener('touchend', function (e) {
+            console.log("end blue");
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("POST", '/Home/PostBlueRelease', true);
+            xhttp.send();
+            e.preventDefault()
+        }, false);
 
-    //}, false)
+    }, false)
 
     //function onBoxClicked(color, isKeyDown) {
     //    switch (color) {
     //        case 'red':
     //            if (isKeyDown) {
-    //                alert("down");
+    //                console.log("down red");
     //                //document.getElementById("btnRed").click();
     //            }
     //            else {
-    //                alert("up");
+    //                console.log("up red");
     //                //document.getElementById("btnRedRelease").click();
     //            }
     //            break;
     //        case 'yellow':
-    //            document.getElementById("btnYellow").click();
+    //            //document.getElementById("btnYellow").click();
+    //            if (isKeyDown) {
+    //                console.log("down yellow");
+    //                //document.getElementById("btnYellow").click();
+    //            }
+    //            else {
+    //                console.log("up yellow");
+    //                //document.getElementById("btnYellowRelease").click();
+    //            }
     //            break;
     //        case 'green':
-    //            document.getElementById("btnGreen").click();
+    //            //document.getElementById("btnGreen").click();
+    //            if (isKeyDown) {
+    //                console.log("down green");
+    //                //document.getElementById("btnGreen").click();
+    //            }
+    //            else {
+    //                console.log("up green");
+    //                /document.getElementById("btnGreenRelease").click();
+    //            }
     //            break;
     //        case 'blue':
-    //            document.getElementById("btnBlue").click();
+    //            //document.getElementById("btnBlue").click();
+    //            if (isKeyDown) {
+    //                console.log("down blue");
+    //                //document.getElementById("btnBlue").click();
+    //            }
+    //            else {
+    //                console.log("up blue");
+    //                //document.getElementById("btnBlueRelease").click();
+    //            }
     //            break;
     //        default:
     //            break;
