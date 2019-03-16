@@ -1,14 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
-using Logger;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using RaspberryRobot;
-using RaspberryRobotGpio;
-using WebApplicationDemo.Models;
 
 namespace WebApplicationDemo.Controllers
 {
@@ -25,7 +16,34 @@ namespace WebApplicationDemo.Controllers
         public IActionResult PostRed()
         {
             var robot = new Robot();
-            robot.RedLED(true);
+            robot.MoveForward();
+
+            return View("Index");
+        }
+       
+        [HttpPost]
+        public IActionResult PostYellow()
+        {
+            var robot = new Robot();
+            robot.MoveReverse();
+
+            return View("Index");
+        }
+
+        [HttpPost]
+        public IActionResult PostGreen()
+        {
+            var robot = new Robot();
+            robot.MoveLeft();
+
+            return View("Index");
+        }
+        
+        [HttpPost]
+        public IActionResult PostBlue()
+        {
+            var robot = new Robot();
+            robot.MoveRight();
 
             return View("Index");
         }
@@ -35,16 +53,7 @@ namespace WebApplicationDemo.Controllers
         {
 
             var robot = new Robot();
-            robot.RedLED(false);
-
-            return View("Index");
-        }
-
-        [HttpPost]
-        public IActionResult PostYellow()
-        {
-            var robot = new Robot();
-            robot.YellowLED(true);
+            robot.Stop();
 
             return View("Index");
         }
@@ -53,35 +62,16 @@ namespace WebApplicationDemo.Controllers
         public IActionResult PostYellowRelease()
         {
             var robot = new Robot();
-            robot.YellowLED(false);
+            robot.Stop();
 
             return View("Index");
         }
-
-        [HttpPost]
-        public IActionResult PostGreen()
-        {
-            var robot = new Robot();
-            robot.GreenLED(true);
-
-            return View("Index");
-        }
-
 
         [HttpPost]
         public IActionResult PostGreenRelease()
         {
             var robot = new Robot();
-            robot.GreenLED(false);
-
-            return View("Index");
-        }
-
-        [HttpPost]
-        public IActionResult PostBlue()
-        {
-            var robot = new Robot();
-            robot.BlueLED(true);
+            robot.Stop();
 
             return View("Index");
         }
@@ -90,10 +80,9 @@ namespace WebApplicationDemo.Controllers
         public IActionResult PostBlueRelease()
         {
             var robot = new Robot();
-            robot.BlueLED(false);
+            robot.Stop();
 
             return View("Index");
         }
-
     }
 }
