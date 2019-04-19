@@ -13,7 +13,7 @@ namespace WebApplicationDemo.Controllers
         }
 
         [HttpPost]
-        public IActionResult PostRed()
+        public IActionResult PostForward()
         {
             var robot = new Robot();
             robot.MoveForward();
@@ -22,7 +22,7 @@ namespace WebApplicationDemo.Controllers
         }
        
         [HttpPost]
-        public IActionResult PostYellow()
+        public IActionResult PostReverse()
         {
             var robot = new Robot();
             robot.MoveReverse();
@@ -31,7 +31,7 @@ namespace WebApplicationDemo.Controllers
         }
 
         [HttpPost]
-        public IActionResult PostGreen()
+        public IActionResult PostLeft()
         {
             var robot = new Robot();
             robot.MoveLeft();
@@ -40,7 +40,7 @@ namespace WebApplicationDemo.Controllers
         }
         
         [HttpPost]
-        public IActionResult PostBlue()
+        public IActionResult PostRight()
         {
             var robot = new Robot();
             robot.MoveRight();
@@ -49,36 +49,9 @@ namespace WebApplicationDemo.Controllers
         }
 
         [HttpPost]
-        public IActionResult PostRedRelease()
+        public IActionResult PostStop()
         {
 
-            var robot = new Robot();
-            robot.Stop();
-
-            return View("Index");
-        }
-
-        [HttpPost]
-        public IActionResult PostYellowRelease()
-        {
-            var robot = new Robot();
-            robot.Stop();
-
-            return View("Index");
-        }
-
-        [HttpPost]
-        public IActionResult PostGreenRelease()
-        {
-            var robot = new Robot();
-            robot.Stop();
-
-            return View("Index");
-        }
-
-        [HttpPost]
-        public IActionResult PostBlueRelease()
-        {
             var robot = new Robot();
             robot.Stop();
 

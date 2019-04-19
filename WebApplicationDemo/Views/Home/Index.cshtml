@@ -18,7 +18,7 @@
 
 </style>
 
-<h1>Hello My Robot 5</h1>
+<h1>Hello My Robot 6</h1>
 
 
 <div class="container">
@@ -58,60 +58,60 @@
     window.addEventListener('load', function () {
 
 
-        document.getElementById("boxLeft").addEventListener('touchstart', function (e) {
-            var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", '/Home/PostRed', true);
-            xhttp.send();
-
-            e.preventDefault()
-        }, false);
-
-        document.getElementById("boxLeft").addEventListener('touchend', function (e) {
-            var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", '/Home/PostRedRelease', true);
-            xhttp.send();
-
-            e.preventDefault()
-        }, false);
-
         document.getElementById("boxForward").addEventListener('touchstart', function (e) {
             var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", '/Home/PostYellow', true);
+            xhttp.open("POST", '/Home/PostForward', true);
             xhttp.send();
+
             e.preventDefault()
         }, false);
 
         document.getElementById("boxForward").addEventListener('touchend', function (e) {
             var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", '/Home/PostYellowRelease', true);
+            xhttp.open("POST", '/Home/PostStop', true);
             xhttp.send();
+
             e.preventDefault()
         }, false);
 
         document.getElementById("boxReverse").addEventListener('touchstart', function (e) {
             var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", '/Home/PostGreen', true);
+            xhttp.open("POST", '/Home/PostReverse', true);
             xhttp.send();
             e.preventDefault()
         }, false);
 
         document.getElementById("boxReverse").addEventListener('touchend', function (e) {
             var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", '/Home/PostGreenRelease', true);
+            xhttp.open("POST", '/Home/PostStop', true);
+            xhttp.send();
+            e.preventDefault()
+        }, false);
+
+        document.getElementById("boxLeft").addEventListener('touchstart', function (e) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("POST", '/Home/PostLeft', true);
+            xhttp.send();
+            e.preventDefault()
+        }, false);
+
+        document.getElementById("boxLeft").addEventListener('touchend', function (e) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("POST", '/Home/PostStop', true);
             xhttp.send();
             e.preventDefault()
         }, false);
 
         document.getElementById("boxRight").addEventListener('touchstart', function (e) {
             var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", '/Home/PostBlue', true);
+            xhttp.open("POST", '/Home/PostRight', true);
             xhttp.send();
             e.preventDefault()
         }, false);
 
         document.getElementById("boxRight").addEventListener('touchend', function (e) {
             var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", '/Home/PostBlueRelease', true);
+            xhttp.open("POST", '/Home/PostStop', true);
             xhttp.send();
             e.preventDefault()
         }, false);

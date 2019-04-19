@@ -15,25 +15,25 @@ namespace RaspberryRobot
         public void MoveForward()
         {
             WriteToGpio(PinValue.High, redPin);
-            WriteToGpio(PinValue.High, yellowPin);
+            WriteToGpio(PinValue.High, greenPin);
         }
 
         public void MoveReverse()
         {
-            WriteToGpio(PinValue.High, greenPin);
+            WriteToGpio(PinValue.High, yellowPin);
             WriteToGpio(PinValue.High, bluePin);
         }
 
         public void MoveLeft()
         {
-            WriteToGpio(PinValue.High, yellowPin);
-            WriteToGpio(PinValue.High, greenPin);
+            WriteToGpio(PinValue.High, redPin);
+            WriteToGpio(PinValue.High, bluePin);
         }
 
         public void MoveRight()
         {
-            WriteToGpio(PinValue.High, redPin);
-            WriteToGpio(PinValue.High, bluePin);
+            WriteToGpio(PinValue.High, yellowPin);
+            WriteToGpio(PinValue.High, greenPin);
         }
 
 
