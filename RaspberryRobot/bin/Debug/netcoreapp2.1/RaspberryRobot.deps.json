@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v2.1": {
       "RaspberryRobot/1.0.0": {
+        "dependencies": {
+          "RaspberryRobotGpio": "1.0.0"
+        },
         "runtime": {
           "RaspberryRobot.dll": {}
+        }
+      },
+      "RaspberryRobotGpio/1.0.0": {
+        "runtime": {
+          "RaspberryRobotGpio.dll": {}
         }
       }
     }
   },
   "libraries": {
     "RaspberryRobot/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RaspberryRobotGpio/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,0 +1,14 @@
+C:\Solutions\RaspberryRobot\RaspberryRobotWeb\bin\Debug\netcoreapp2.1\RaspberryRobotWeb.deps.json
+C:\Solutions\RaspberryRobot\RaspberryRobotWeb\bin\Debug\netcoreapp2.1\RaspberryRobotWeb.runtimeconfig.json
+C:\Solutions\RaspberryRobot\RaspberryRobotWeb\bin\Debug\netcoreapp2.1\RaspberryRobotWeb.runtimeconfig.dev.json
+C:\Solutions\RaspberryRobot\RaspberryRobotWeb\bin\Debug\netcoreapp2.1\RaspberryRobotWeb.dll
+C:\Solutions\RaspberryRobot\RaspberryRobotWeb\bin\Debug\netcoreapp2.1\RaspberryRobotWeb.pdb
+C:\Solutions\RaspberryRobot\RaspberryRobotWeb\obj\Debug\netcoreapp2.1\RaspberryRobotWeb.csproj.CoreCompileInputs.cache
+C:\Solutions\RaspberryRobot\RaspberryRobotWeb\obj\Debug\netcoreapp2.1\RaspberryRobotWeb.RazorAssemblyInfo.cache
+C:\Solutions\RaspberryRobot\RaspberryRobotWeb\obj\Debug\netcoreapp2.1\RaspberryRobotWeb.RazorAssemblyInfo.cs
+C:\Solutions\RaspberryRobot\RaspberryRobotWeb\obj\Debug\netcoreapp2.1\RaspberryRobotWeb.AssemblyInfoInputs.cache
+C:\Solutions\RaspberryRobot\RaspberryRobotWeb\obj\Debug\netcoreapp2.1\RaspberryRobotWeb.AssemblyInfo.cs
+C:\Solutions\RaspberryRobot\RaspberryRobotWeb\obj\Debug\netcoreapp2.1\RaspberryRobotWeb.RazorTargetAssemblyInfo.cache
+C:\Solutions\RaspberryRobot\RaspberryRobotWeb\obj\Debug\netcoreapp2.1\RaspberryRobotWeb.dll
+C:\Solutions\RaspberryRobot\RaspberryRobotWeb\obj\Debug\netcoreapp2.1\RaspberryRobotWeb.pdb
+C:\Solutions\RaspberryRobot\RaspberryRobotWeb\obj\Debug\netcoreapp2.1\RaspberryRobotWeb.csprojAssemblyReference.cache
