@@ -4333,6 +4333,29 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "RaspberryRobot/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "RaspberryRobotGpio": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RaspberryRobot.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RaspberryRobot.dll": {}
+        }
+      },
+      "RaspberryRobotGpio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/RaspberryRobotGpio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RaspberryRobotGpio.dll": {}
+        }
       }
     }
   },
@@ -11491,12 +11514,23 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "RaspberryRobot/1.0.0": {
+      "type": "project",
+      "path": "../RaspberryRobot/RaspberryRobot.csproj",
+      "msbuildProject": "../RaspberryRobot/RaspberryRobot.csproj"
+    },
+    "RaspberryRobotGpio/1.0.0": {
+      "type": "project",
+      "path": "../RaspberryRobotGpio/RaspberryRobotGpio.csproj",
+      "msbuildProject": "../RaspberryRobotGpio/RaspberryRobotGpio.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.App >= 2.1.1",
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "RaspberryRobot >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -11528,7 +11562,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Solutions\\RaspberryRobot\\RaspberryRobot\\RaspberryRobot.csproj": {
+              "projectPath": "C:\\Solutions\\RaspberryRobot\\RaspberryRobot\\RaspberryRobot.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -6,4 +6,3 @@ C:\Solutions\RaspberryRobot\Logger\obj\Debug\netcoreapp2.1\Logger.AssemblyInfoIn
 C:\Solutions\RaspberryRobot\Logger\obj\Debug\netcoreapp2.1\Logger.AssemblyInfo.cs
 C:\Solutions\RaspberryRobot\Logger\obj\Debug\netcoreapp2.1\Logger.dll
 C:\Solutions\RaspberryRobot\Logger\obj\Debug\netcoreapp2.1\Logger.pdb
-C:\Solutions\RaspberryRobot\Logger\obj\Debug\netcoreapp2.1\Logger.csprojAssemblyReference.cache

@@ -1,0 +1,12 @@
+C:\Solutions\RaspberryRobot\RaspberryRobot\bin\Release\netcoreapp2.1\RaspberryRobot.deps.json
+C:\Solutions\RaspberryRobot\RaspberryRobot\bin\Release\netcoreapp2.1\RaspberryRobot.dll
+C:\Solutions\RaspberryRobot\RaspberryRobot\bin\Release\netcoreapp2.1\RaspberryRobot.pdb
+C:\Solutions\RaspberryRobot\RaspberryRobot\bin\Release\netcoreapp2.1\RaspberryRobotGpio.dll
+C:\Solutions\RaspberryRobot\RaspberryRobot\bin\Release\netcoreapp2.1\RaspberryRobotGpio.pdb
+C:\Solutions\RaspberryRobot\RaspberryRobot\obj\Release\netcoreapp2.1\RaspberryRobot.csprojAssemblyReference.cache
+C:\Solutions\RaspberryRobot\RaspberryRobot\obj\Release\netcoreapp2.1\RaspberryRobot.csproj.CoreCompileInputs.cache
+C:\Solutions\RaspberryRobot\RaspberryRobot\obj\Release\netcoreapp2.1\RaspberryRobot.AssemblyInfoInputs.cache
+C:\Solutions\RaspberryRobot\RaspberryRobot\obj\Release\netcoreapp2.1\RaspberryRobot.AssemblyInfo.cs
+C:\Solutions\RaspberryRobot\RaspberryRobot\obj\Release\netcoreapp2.1\RaspberryRobot.csproj.CopyComplete
+C:\Solutions\RaspberryRobot\RaspberryRobot\obj\Release\netcoreapp2.1\RaspberryRobot.dll
+C:\Solutions\RaspberryRobot\RaspberryRobot\obj\Release\netcoreapp2.1\RaspberryRobot.pdb

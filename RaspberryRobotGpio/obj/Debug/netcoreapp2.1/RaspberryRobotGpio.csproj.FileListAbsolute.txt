@@ -6,4 +6,3 @@ C:\Solutions\RaspberryRobot\RaspberryRobotGpio\obj\Debug\netcoreapp2.1\Raspberry
 C:\Solutions\RaspberryRobot\RaspberryRobotGpio\obj\Debug\netcoreapp2.1\RaspberryRobotGpio.AssemblyInfo.cs
 C:\Solutions\RaspberryRobot\RaspberryRobotGpio\obj\Debug\netcoreapp2.1\RaspberryRobotGpio.dll
 C:\Solutions\RaspberryRobot\RaspberryRobotGpio\obj\Debug\netcoreapp2.1\RaspberryRobotGpio.pdb
-C:\Solutions\RaspberryRobot\RaspberryRobotGpio\obj\Debug\netcoreapp2.1\RaspberryRobotGpio.csprojAssemblyReference.cache
