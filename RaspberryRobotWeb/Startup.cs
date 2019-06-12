@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using RaspberryCamera;
 
 namespace RaspberryRobotWeb
 {
@@ -29,6 +30,8 @@ namespace RaspberryRobotWeb
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddSingleton<ICamera, Camera>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

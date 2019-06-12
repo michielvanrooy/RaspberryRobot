@@ -23,4 +23,8 @@
     <None Include="wwwroot\images\test.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RaspberryCamera\RaspberryCamera.csproj" />
+  </ItemGroup>
+
 </Project>

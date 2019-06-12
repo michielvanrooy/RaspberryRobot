@@ -1,0 +1,9 @@
+C:\Solutions\RaspberryRobot\RaspberryCamera\bin\Debug\netcoreapp2.1\RaspberryCamera.deps.json
+C:\Solutions\RaspberryRobot\RaspberryCamera\bin\Debug\netcoreapp2.1\RaspberryCamera.dll
+C:\Solutions\RaspberryRobot\RaspberryCamera\bin\Debug\netcoreapp2.1\RaspberryCamera.pdb
+C:\Solutions\RaspberryRobot\RaspberryCamera\obj\Debug\netcoreapp2.1\RaspberryCamera.csproj.CoreCompileInputs.cache
+C:\Solutions\RaspberryRobot\RaspberryCamera\obj\Debug\netcoreapp2.1\RaspberryCamera.AssemblyInfoInputs.cache
+C:\Solutions\RaspberryRobot\RaspberryCamera\obj\Debug\netcoreapp2.1\RaspberryCamera.AssemblyInfo.cs
+C:\Solutions\RaspberryRobot\RaspberryCamera\obj\Debug\netcoreapp2.1\RaspberryCamera.dll
+C:\Solutions\RaspberryRobot\RaspberryCamera\obj\Debug\netcoreapp2.1\RaspberryCamera.pdb
+C:\Solutions\RaspberryRobot\RaspberryCamera\obj\Debug\netcoreapp2.1\RaspberryCamera.csprojAssemblyReference.cache

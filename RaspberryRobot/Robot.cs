@@ -3,8 +3,6 @@ using RaspberryRobotGpio.Enums;
 
 namespace RaspberryRobot
 {
-    //TODO: Castle Windosor
-
     public class Robot : IRobot
     {
         private const int redPin = 18;
@@ -26,14 +24,14 @@ namespace RaspberryRobot
 
         public void MoveLeft()
         {
-            WriteToGpio(PinValue.High, redPin);
-            WriteToGpio(PinValue.High, bluePin);
+            WriteToGpio(PinValue.High, yellowPin);
+            WriteToGpio(PinValue.High, greenPin);
         }
 
         public void MoveRight()
         {
-            WriteToGpio(PinValue.High, yellowPin);
-            WriteToGpio(PinValue.High, greenPin);
+            WriteToGpio(PinValue.High, redPin);
+            WriteToGpio(PinValue.High, bluePin);
         }
 
 

@@ -21,6 +21,14 @@
 
 
     <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <img id="imgTest" src="images/cameraOutput.jpg" alt="No Camera Image" />
+        </div>
+    </div>
+
+
+    <div class="row">
         <div class="col-xs-12">
             <div id="boxForward" class="box" style="background-color:yellow">
                 <span class="glyphicon glyphicon-arrow-up arrow "></span>
@@ -52,11 +60,28 @@
 
 
 <script>
+
+
+    //$(document).ready(function () {
+
+
+    setInterval(function () {
+        var myImageElement = document.getElementById('imgTest');
+        myImageElement.src = 'images/cameraOutput.jpg?rand=' + Math.random();    //TODO: Must get url from app.settings
+    }, 500);
+       
+    //});
+
+
+
     // on page load
     window.addEventListener('load', function () {
 
 
         document.getElementById("boxForward").addEventListener('touchstart', function (e) {
+
+            console.log("I am pressed");
+
             var xhttp = new XMLHttpRequest();
             xhttp.open("POST", '/RaspberryPiWebsite/Home/PostForward', true);
             xhttp.send();

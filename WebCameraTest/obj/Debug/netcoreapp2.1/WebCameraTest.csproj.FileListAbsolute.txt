@@ -25,3 +25,5 @@ C:\Solutions\RaspberryRobot\WebCameraTest\obj\Debug\netcoreapp2.1\WebCameraTest.
 C:\Solutions\RaspberryRobot\WebCameraTest\obj\Debug\netcoreapp2.1\WebCameraTest.csproj.CopyComplete
 C:\Solutions\RaspberryRobot\WebCameraTest\bin\Debug\netcoreapp2.1\appsettings.json
 C:\Solutions\RaspberryRobot\WebCameraTest\obj\Debug\netcoreapp2.1\WebCameraTest.csprojAssemblyReference.cache
+C:\Solutions\RaspberryRobot\WebCameraTest\bin\Debug\netcoreapp2.1\RaspberryCamera.dll
+C:\Solutions\RaspberryRobot\WebCameraTest\bin\Debug\netcoreapp2.1\RaspberryCamera.pdb

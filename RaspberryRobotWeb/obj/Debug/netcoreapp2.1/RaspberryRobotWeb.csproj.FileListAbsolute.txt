@@ -28,3 +28,5 @@ C:\Solutions\RaspberryRobot\RaspberryRobotWeb\bin\Debug\netcoreapp2.1\RaspberryR
 C:\Solutions\RaspberryRobot\RaspberryRobotWeb\bin\Debug\netcoreapp2.1\RaspberryRobotGpio.dll
 C:\Solutions\RaspberryRobot\RaspberryRobotWeb\bin\Debug\netcoreapp2.1\RaspberryRobot.pdb
 C:\Solutions\RaspberryRobot\RaspberryRobotWeb\bin\Debug\netcoreapp2.1\RaspberryRobotGpio.pdb
+C:\Solutions\RaspberryRobot\RaspberryRobotWeb\bin\Debug\netcoreapp2.1\RaspberryCamera.dll
+C:\Solutions\RaspberryRobot\RaspberryRobotWeb\bin\Debug\netcoreapp2.1\RaspberryCamera.pdb

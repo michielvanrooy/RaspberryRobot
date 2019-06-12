@@ -11,42 +11,17 @@
 
 <img id="imgTest" src="@Model.ImagePath" alt="test" />
 
+<input type="button" value="Start" onclick="location.href='@Url.Action("Start", "Home")'" />
+<br />
 
 <script>
 
 
     $(document).ready(function () {
-
-
         setInterval(function () {
             var myImageElement = document.getElementById('imgTest');
-            myImageElement.src = 'images/test.png?rand=' + Math.random();    //TODO: Must get url from app.settings
+            myImageElement.src = 'images/test.jpg?rand=' + Math.random();    //TODO: Must get url from app.settings
         }, 500);
-
-        //$("#imgTest").click(function () {
-
-        //    console.log("Clicked");
-
-        //    $.ajax({
-        //        url: "/",
-        //        type: "post",
-        //        success: function (result) {
-        //            $("#imgTest").attr("src", "/Images/test.png?r=" + Math.random());
-        //        }
-        //    });
-        //});
     });
-
-    //$(document).ready(function () {
-    //    $("#imgTest").click(function () {
-    //        $.ajax({
-    //            url: "/Account/CaptchaImage",
-    //            type: "post",
-    //            success: function (result) {
-    //                $("#imgTest").attr("src", "/Account/CaptchaImage/?r=" + Math.random());
-    //            }
-    //        });
-    //    });
-    //});
 
 </script>
