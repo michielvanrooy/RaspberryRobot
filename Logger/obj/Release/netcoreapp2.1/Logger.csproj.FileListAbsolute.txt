@@ -1,0 +1,8 @@
+C:\Solutions\RaspberryRobot\Logger\bin\Release\netcoreapp2.1\Logger.deps.json
+C:\Solutions\RaspberryRobot\Logger\bin\Release\netcoreapp2.1\Logger.dll
+C:\Solutions\RaspberryRobot\Logger\bin\Release\netcoreapp2.1\Logger.pdb
+C:\Solutions\RaspberryRobot\Logger\obj\Release\netcoreapp2.1\Logger.csproj.CoreCompileInputs.cache
+C:\Solutions\RaspberryRobot\Logger\obj\Release\netcoreapp2.1\Logger.AssemblyInfoInputs.cache
+C:\Solutions\RaspberryRobot\Logger\obj\Release\netcoreapp2.1\Logger.AssemblyInfo.cs
+C:\Solutions\RaspberryRobot\Logger\obj\Release\netcoreapp2.1\Logger.dll
+C:\Solutions\RaspberryRobot\Logger\obj\Release\netcoreapp2.1\Logger.pdb

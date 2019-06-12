@@ -1,0 +1,27 @@
+﻿@model WebCameraTest.Models.ImageModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<span>
+    @Model.ImagePath
+</span>
+
+<h1>Hello Camera</h1>
+
+<img id="imgTest" src="@Model.ImagePath" alt="test" />
+
+<input type="button" value="Start" onclick="location.href='@Url.Action("Start", "Home")'" />
+<br />
+
+<script>
+
+
+    $(document).ready(function () {
+        setInterval(function () {
+            var myImageElement = document.getElementById('imgTest');
+            myImageElement.src = 'images/test.jpg?rand=' + Math.random();    //TODO: Must get url from app.settings
+        }, 500);
+    });
+
+</script>

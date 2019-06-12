@@ -5,11 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Models\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RaspberryCamera\RaspberryCamera.csproj" />
+    <ProjectReference Include="..\RaspberryRobot\RaspberryRobot.csproj" />
   </ItemGroup>
 
 </Project>
