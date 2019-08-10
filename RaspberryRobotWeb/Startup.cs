@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using RaspberryCamera;
+using RaspberryRobot;
 
 namespace RaspberryRobotWeb
 {
@@ -32,6 +33,7 @@ namespace RaspberryRobotWeb
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddSingleton<ICamera, Camera>();
+            services.AddSingleton<IRobot, Robot>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,8 +50,7 @@ namespace RaspberryRobotWeb
 
             app.UsePathBase("/RaspberryPiWebsite");
             app.UseStaticFiles();
-            //app.UseCookiePolicy();
-
+            
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
