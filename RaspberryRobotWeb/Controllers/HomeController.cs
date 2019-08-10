@@ -7,10 +7,12 @@ namespace RaspberryRobotWeb.Controllers
     public class HomeController : Controller
     {
         private readonly ICamera raspberryCamera;
+        private readonly IRobot robot;
 
-        public HomeController(ICamera raspberryCamera)
+        public HomeController(ICamera raspberryCamera, IRobot robot)
         {
             this.raspberryCamera = raspberryCamera;
+            this.robot = robot;
         }
 
         public IActionResult Index()
@@ -19,11 +21,9 @@ namespace RaspberryRobotWeb.Controllers
         }
 
         [HttpPost]
-        public IActionResult PostForward()
+        public IActionResult PostForward()   
         {
-            var robot = new Robot();
-            robot.MoveForward();
-
+            this.robot.MoveForward();
             this.raspberryCamera.RefreshCamera();
 
             return View("Index");
@@ -32,9 +32,7 @@ namespace RaspberryRobotWeb.Controllers
         [HttpPost]
         public IActionResult PostReverse()
         {
-            var robot = new Robot();
-            robot.MoveReverse();
-
+            this.robot.MoveReverse();
             this.raspberryCamera.RefreshCamera();
 
             return View("Index");
@@ -43,8 +41,7 @@ namespace RaspberryRobotWeb.Controllers
         [HttpPost]
         public IActionResult PostLeft()
         {
-            var robot = new Robot();
-            robot.MoveLeft();
+            this.robot.MoveLeft();
 
             this.raspberryCamera.RefreshCamera();
 
@@ -54,8 +51,7 @@ namespace RaspberryRobotWeb.Controllers
         [HttpPost]
         public IActionResult PostRight()
         {
-            var robot = new Robot();
-            robot.MoveRight();
+            this.robot.MoveRight();
 
             this.raspberryCamera.RefreshCamera();
 
@@ -65,8 +61,7 @@ namespace RaspberryRobotWeb.Controllers
         [HttpPost]
         public IActionResult PostStop()
         {
-            var robot = new Robot();
-            robot.Stop();
+            this.robot.Stop();
             
             return View("Index");
         }

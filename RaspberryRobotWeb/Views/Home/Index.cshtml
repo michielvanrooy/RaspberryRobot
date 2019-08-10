@@ -2,7 +2,6 @@
     ViewData["Title"] = "Home Page";
 }
 
-
 <style>
 
     .box {
@@ -12,13 +11,38 @@
         padding-top: 10%;
     }
 
+    .boxLeftRight {
+        padding-top: 15%;
+    }
+
     .arrow {
         font-size: 50pt;
+        -webkit-transition: 1s;
     }
+
+    .arrowBluePressed {
+        font-size: 80pt;
+        text-shadow: 0px 0px 70px blue;
+    }
+
+    .arrowRedPressed {
+        font-size: 80pt;
+        text-shadow: 0px 0px 70px red;
+    }
+
+    .arrowGreenPressed {
+        font-size: 80pt;
+        text-shadow: 0px 0px 70px green;
+    }
+
+    .arrowYellowPressed {
+        font-size: 80pt;
+        text-shadow: 0px 0px 70px yellow;
+    }
+
 </style>
 
 <div class="container">
-
 
     <div class="row">
         <div class="col-md-4"></div>
@@ -27,114 +51,130 @@
         </div>
     </div>
 
-
     <div class="row">
         <div class="col-xs-12">
-            <div id="boxForward" class="box" style="background-color:yellow">
+            <div id="boxForward" class="box">
                 <span class="glyphicon glyphicon-arrow-up arrow "></span>
             </div>
         </div>
 
         <div class="col-xs-6">
-            <div id="boxLeft" class="box" style="background-color:red">
+            <div id="boxLeft" class="box boxLeftRight">
                 <span class="glyphicon glyphicon-arrow-left arrow"></span>
             </div>
         </div>
 
         <div class="col-xs-6">
-            <div id="boxRight" class="box" style="background-color:blue">
+            <div id="boxRight" class="box boxLeftRight">
                 <span class="glyphicon glyphicon-arrow-right arrow"></span>
             </div>
         </div>
 
         <div class="col-xs-12">
-            <div id="boxReverse" class="box" style="background-color:green">
+            <div id="boxReverse" class="box">
                 <span class="glyphicon glyphicon-arrow-down arrow"></span>
             </div>
         </div>
     </div>
-
 </div>
-
-
-
 
 <script>
 
-
-    //$(document).ready(function () {
-
-
     setInterval(function () {
         var myImageElement = document.getElementById('imgTest');
-        myImageElement.src = 'images/cameraOutput.jpg?rand=' + Math.random();    //TODO: Must get url from app.settings
+        myImageElement.src = 'images/cameraOutput.jpg?rand=' + Math.random();
     }, 500);
-       
-    //});
-
 
 
     // on page load
     window.addEventListener('load', function () {
 
-
         document.getElementById("boxForward").addEventListener('touchstart', function (e) {
 
-            console.log("I am pressed");
+            //Animate arrow to grow
+            document.getElementById("boxForward").firstElementChild.classList.add("arrowYellowPressed");
 
             var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", '/RaspberryPiWebsite/Home/PostForward', true);
+            xhttp.open("POST", '/robot/Home/PostForward', true);
             xhttp.send();
 
             e.preventDefault()
         }, false);
 
         document.getElementById("boxForward").addEventListener('touchend', function (e) {
+
+            //Animate arrow to shrink
+            document.getElementById("boxForward").firstElementChild.classList.remove("arrowYellowPressed");
+
             var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", '/RaspberryPiWebsite/Home/PostStop', true);
+            xhttp.open("POST", '/robot/Home/PostStop', true);
             xhttp.send();
 
             e.preventDefault()
         }, false);
 
         document.getElementById("boxReverse").addEventListener('touchstart', function (e) {
+
+            //Animate arrow to grow
+            document.getElementById("boxReverse").firstElementChild.classList.add("arrowGreenPressed");
+
             var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", '/RaspberryPiWebsite/Home/PostReverse', true);
+            xhttp.open("POST", '/robot/Home/PostReverse', true);
             xhttp.send();
             e.preventDefault()
         }, false);
 
         document.getElementById("boxReverse").addEventListener('touchend', function (e) {
+
+            //Animate arrow to shrink
+            document.getElementById("boxReverse").firstElementChild.classList.remove("arrowGreenPressed");
+
             var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", '/RaspberryPiWebsite/Home/PostStop', true);
+            xhttp.open("POST", '/robot/Home/PostStop', true);
             xhttp.send();
             e.preventDefault()
         }, false);
 
         document.getElementById("boxLeft").addEventListener('touchstart', function (e) {
+
+            //Animate arrow to grow
+            document.getElementById("boxLeft").firstElementChild.classList.add("arrowRedPressed");
+
             var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", '/RaspberryPiWebsite/Home/PostLeft', true);
+            xhttp.open("POST", '/robot/Home/PostLeft', true);
             xhttp.send();
             e.preventDefault()
         }, false);
 
         document.getElementById("boxLeft").addEventListener('touchend', function (e) {
+
+            //Animate arrow to shrink
+            document.getElementById("boxLeft").firstElementChild.classList.remove("arrowRedPressed");
+
             var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", '/RaspberryPiWebsite/Home/PostStop', true);
+            xhttp.open("POST", '/robot/Home/PostStop', true);
             xhttp.send();
             e.preventDefault()
         }, false);
 
         document.getElementById("boxRight").addEventListener('touchstart', function (e) {
+
+            //Animate arrow to grow
+            document.getElementById("boxRight").firstElementChild.classList.add("arrowBluePressed");
+
             var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", '/RaspberryPiWebsite/Home/PostRight', true);
+            xhttp.open("POST", '/robot/Home/PostRight', true);
             xhttp.send();
             e.preventDefault()
         }, false);
 
         document.getElementById("boxRight").addEventListener('touchend', function (e) {
+
+            //Animate arrow to shrink
+            document.getElementById("boxRight").firstElementChild.classList.remove("arrowBluePressed");
+
             var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", '/RaspberryPiWebsite/Home/PostStop', true);
+            xhttp.open("POST", '/robot/Home/PostStop', true);
             xhttp.send();
             e.preventDefault()
         }, false);
