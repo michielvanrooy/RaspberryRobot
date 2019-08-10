@@ -34,7 +34,6 @@ namespace RaspberryRobot
             WriteToGpio(PinValue.High, bluePin);
         }
 
-
         public void Stop()
         {
             WriteToGpio(PinValue.Low, redPin);
