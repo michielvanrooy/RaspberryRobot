@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2041
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RaspberryRobotTester", "RaspberryRobotTester\RaspberryRobotTester.csproj", "{303F6C04-65F3-4A82-8370-F83717526FF0}"
 EndProject
@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logger", "Logger\Logger.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebCameraTest", "WebCameraTest\WebCameraTest.csproj", "{5DF0C262-0489-4DD7-80D0-32C84B56C840}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaspberryCamera", "RaspberryCamera\RaspberryCamera.csproj", "{9857F77B-F957-4DCF-BBBE-EB2B20E4DF2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RaspberryCamera", "RaspberryCamera\RaspberryCamera.csproj", "{9857F77B-F957-4DCF-BBBE-EB2B20E4DF2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaspberryRobot.Robot", "RaspberryRobot.Robot\RaspberryRobot.Robot.csproj", "{99067DF9-AB42-4872-AA8E-89836802C06C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{9857F77B-F957-4DCF-BBBE-EB2B20E4DF2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9857F77B-F957-4DCF-BBBE-EB2B20E4DF2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9857F77B-F957-4DCF-BBBE-EB2B20E4DF2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99067DF9-AB42-4872-AA8E-89836802C06C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99067DF9-AB42-4872-AA8E-89836802C06C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99067DF9-AB42-4872-AA8E-89836802C06C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99067DF9-AB42-4872-AA8E-89836802C06C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
