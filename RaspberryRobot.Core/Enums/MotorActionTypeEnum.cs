@@ -1,6 +1,6 @@
 ﻿namespace RaspberryRobot.Core.Enums;
 
-public enum MotorActionEnum
+public enum MotorActionTypeEnum
 {
     ForwardLeftAction,
     ForwardRightAction,

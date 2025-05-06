@@ -4,7 +4,7 @@ namespace RaspberryRobot.Core.Interfaces;
 
 public interface IMotorAction : IDisposable
 {
-    MotorActionEnum ActionType { get; }
+    MotorActionTypeEnum ActionType { get; }
 
     void On();
 

@@ -13,7 +13,7 @@ public class ReverseLeftAction : IMotorAction
         this.gpio = new MockedGpio(3);
     }
 
-    public MotorActionEnum ActionType => MotorActionEnum.ReverseLeftAction;
+    public MotorActionTypeEnum ActionType => MotorActionTypeEnum.ReverseLeftAction;
 
     public void Off()
     {

@@ -13,7 +13,7 @@ public class ForwardLeftAction : IMotorAction
         this.gpio = new MockedGpio(1);
     }
 
-    public MotorActionEnum ActionType => MotorActionEnum.ForwardLeftAction;
+    public MotorActionTypeEnum ActionType => MotorActionTypeEnum.ForwardLeftAction;
 
     public void Off()
     {
