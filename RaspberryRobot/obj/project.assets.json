@@ -27,7 +27,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\michiel.vanrooy\\.nuget\\packages\\": {}
+    "C:\\Users\\michi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -35,11 +35,11 @@
       "projectUniqueName": "C:\\Solutions\\RaspberryRobot\\RaspberryRobot\\RaspberryRobot.csproj",
       "projectName": "RaspberryRobot",
       "projectPath": "C:\\Solutions\\RaspberryRobot\\RaspberryRobot\\RaspberryRobot.csproj",
-      "packagesPath": "C:\\Users\\michiel.vanrooy\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\michi\\.nuget\\packages\\",
       "outputPath": "C:\\Solutions\\RaspberryRobot\\RaspberryRobot\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\michiel.vanrooy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\michi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -90,7 +90,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.310/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
