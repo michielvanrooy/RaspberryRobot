@@ -1,0 +1,6 @@
+@RaspberryRobot.Api_HostAddress = http://localhost:5042
+
+GET {{RaspberryRobot.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
