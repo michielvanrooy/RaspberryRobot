@@ -1,8 +1,31 @@
+using RaspberryRobot.Core;
+using RaspberryRobot.Core.Interfaces;
+using RaspberryRobot.Core.MotorActions;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(
+        "AllowAllOrigins",
+        policy =>
+        {
+            policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+        });
+});
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddSingleton<IMotorAction, ForwardLeftAction>();
+builder.Services.AddSingleton<IMotorAction, ForwardRightAction>();
+builder.Services.AddSingleton<IMotorAction, ReverseLeftAction>();
+builder.Services.AddSingleton<IMotorAction, ReverseRightAction>();
+
+builder.Services.AddSingleton<MotorActionFactory>();
+
+builder.Services.AddTransient<IRobot, Robot>();
 
 var app = builder.Build();
 
@@ -13,6 +36,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("AllowAllOrigins");
 
 app.UseAuthorization();
 

@@ -23,6 +23,6 @@ public class MockedGpio : IGpio
 
     public void Dispose()
     {
-        Console.WriteLine("Dispose: Object has been disposed");
+        Console.WriteLine($"Dispose: Object with pin number {pinNumber} has been disposed");
     }
 }
