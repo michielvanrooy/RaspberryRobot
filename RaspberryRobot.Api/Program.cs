@@ -22,6 +22,7 @@ builder.Services.AddSingleton<IMotorAction, ForwardLeftAction>();
 builder.Services.AddSingleton<IMotorAction, ForwardRightAction>();
 builder.Services.AddSingleton<IMotorAction, ReverseLeftAction>();
 builder.Services.AddSingleton<IMotorAction, ReverseRightAction>();
+builder.Services.AddTransient<ICamera, Camera>();
 
 builder.Services.AddSingleton<MotorActionFactory>();
 
