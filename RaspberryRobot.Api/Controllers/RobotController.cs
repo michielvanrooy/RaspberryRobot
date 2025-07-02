@@ -15,40 +15,80 @@ public class RobotController : BaseController
     [HttpPost]
     public async Task<IActionResult> Forward()
     {
-        robot.Forward();
+        try
+        {
+            robot.Forward();
 
-        return Ok();
+            return Ok();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("ERROR: " + ex.ToString());
+            throw;
+        }
     }
 
     [HttpPost]
     public async Task<IActionResult> Reverse()
     {
-        robot.Reverse();
+        try
+        {
+            robot.Reverse();
 
-        return Ok();
+            return Ok();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("ERROR: " + ex.ToString());
+            throw;
+        }
     }
 
     [HttpPost]
     public async Task<IActionResult> Left()
     {
-        robot.Left();
+        try
+        {
+            robot.Left();
 
-        return Ok();
+            return Ok();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("ERROR: " + ex.ToString());
+            throw;
+        }
     }
 
     [HttpPost]
     public async Task<IActionResult> Right()
     {
-        robot.Right();
+        try
+        {
+            robot.Right();
 
-        return Ok();
+            return Ok();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("ERROR: " + ex.ToString());
+            throw;
+        }
     }
 
     [HttpPost]
     public async Task<IActionResult> Stop()
     {
-        robot.Stop();
+        try
+        {
+            robot.Stop();
 
-        return Ok();
+            return Ok();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("ERROR: " + ex.ToString());
+            throw;
+        }
     }
 }

@@ -9,8 +9,11 @@ public class ReverseRightAction : IMotorAction
 
     public ReverseRightAction()
     {
-        //TODO: If debug use Mocked and correct pin number
-        this.gpio = new MockedGpio(4);
+        #if DEBUG
+            this.gpio = new MockedGpio(4);
+        #else
+            this.gpio = new Gpio(21);
+        #endif
     }
 
     public MotorActionTypeEnum ActionType => MotorActionTypeEnum.ReverseRightAction;
