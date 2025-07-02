@@ -9,8 +9,11 @@ public class ForwardLeftAction : IMotorAction
 
     public ForwardLeftAction()
     {
-        //TODO: If debug use Mocked and correct pin number
-        this.gpio = new MockedGpio(1);
+        #if DEBUG
+            this.gpio = new MockedGpio(1);
+        #else
+            this.gpio = new Gpio(12);
+        #endif
     }
 
     public MotorActionTypeEnum ActionType => MotorActionTypeEnum.ForwardLeftAction;
