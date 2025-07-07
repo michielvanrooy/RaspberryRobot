@@ -19,12 +19,12 @@ public class CameraController : BaseController
         {
             var photo = this.camera.CaptureImage();
 
-            return Ok(photo);
+            return File(photo, "image/jpeg");
         }
         catch (Exception ex)
         {
             Console.WriteLine("ERROR: " + ex.ToString());
-            throw;
+            return BadRequest(ex.ToString());
         }
     }
 }

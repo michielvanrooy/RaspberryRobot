@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System.Diagnostics;
+using System.Drawing;
 using Iot.Device.Graphics;
 using Iot.Device.Media;
 using RaspberryRobot.Core.Interfaces;
@@ -11,26 +12,34 @@ public class Camera : ICamera
 
     public byte[] CaptureImage()
     {
-        var settings = new VideoConnectionSettings(
-            busId: 0,
-            captureSize: (640, 480)
-            //pixelFormat: PixelFormat..NV12 // Use NV12 to avoid green-tint issue
-        );
+        string outputPath = "photo.jpg"; // Or any temp path you prefer
 
-        using VideoDevice device = VideoDevice.Create(settings);
-        using MemoryStream ms = new MemoryStream(device.Capture());
-        Color[] colors = VideoDevice.Nv12ToRgb(ms, settings.CaptureSize);
-        using BitmapImage bitmap = VideoDevice.RgbToBitmap(settings.CaptureSize, colors);
+        //private string processArguments = $" -rot 180 -w 320 -h 240 -q 5 -o /home/pi/www/RaspberryPiWebsite/wwwroot/images/cameraOutput.jpg -tl 0.5 -t 99999999 -th 0:0:0";
 
-        // Save image
-        bitmap.SaveToFile(_imagePath, ImageFileType.Jpg);
 
-        //File.WriteAllBytes(_imagePath, jpegStream.ToArray());
+        var startInfo = new ProcessStartInfo
+        {
+            FileName = "libcamera-jpeg",
+            Arguments = $"-o {outputPath} --rotation 180 --width 320 --height 240 --quality 30 --timeout 10 -n",
+            RedirectStandardOutput = true,
+            RedirectStandardError = true,
+            UseShellExecute = false,
+            CreateNoWindow = true
+        };
 
-        // Return image file
-        var fileBytes = System.IO.File.ReadAllBytes(_imagePath);
-        return fileBytes;
+        using (var process = new Process { StartInfo = startInfo })
+        {
+            process.Start();
+            process.WaitForExit();
 
-        //return File(fileBytes, "image/jpeg", "capture.jpg");
+            if (process.ExitCode != 0)
+            {
+                string error = process.StandardError.ReadToEnd();
+                throw new Exception($"Camera capture failed: {error}");
+            }
+        }
+
+        // Read the photo as byte array
+        return File.ReadAllBytes(outputPath);
     }
 }
