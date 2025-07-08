@@ -7,6 +7,6 @@ public class HealthzController : BaseController
     [HttpGet]
     public async Task<IActionResult> Get()
     {
-        return Ok("This is all good");
+        return Ok("This is all good, and baie baie Lekker.");
     }
 }
