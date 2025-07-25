@@ -12,7 +12,7 @@ public class Robot : IRobot
         this.motorActionFactory = motorActionFactory;
     }
 
-    public void Forward()
+    public void Forward() 
     {
         var forwardLeft = this.motorActionFactory.GetMotorAction(MotorActionTypeEnum.ForwardLeftAction);
         var forwardRight = this.motorActionFactory.GetMotorAction(MotorActionTypeEnum.ForwardRightAction);
