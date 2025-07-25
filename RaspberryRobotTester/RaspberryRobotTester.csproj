@@ -11,7 +11,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RaspberryRobot.Core\RaspberryRobot.Core.csproj" />
-    <ProjectReference Include="..\RaspberryRobotGpio\RaspberryRobotGpio.csproj" />
   </ItemGroup>
 
 </Project>
