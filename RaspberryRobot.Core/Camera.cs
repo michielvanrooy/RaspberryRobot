@@ -1,7 +1,4 @@
 ﻿using System.Diagnostics;
-using System.Drawing;
-using Iot.Device.Graphics;
-using Iot.Device.Media;
 using RaspberryRobot.Core.Interfaces;
 
 namespace RaspberryRobot.Core;

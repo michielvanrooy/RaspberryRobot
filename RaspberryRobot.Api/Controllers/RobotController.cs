@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
+using RaspberryRobot.Api.Hubs;
+using RaspberryRobot.Core.Constants;
 using RaspberryRobot.Core.Interfaces;
 
 namespace RaspberryRobot.Api.Controllers;
@@ -6,10 +9,12 @@ namespace RaspberryRobot.Api.Controllers;
 public class RobotController : BaseController
 {
     private readonly IRobot robot;
+    private readonly IHubContext<MessageHub> _hubContext;
 
-    public RobotController(IRobot robot)
+    public RobotController(IRobot robot, IHubContext<MessageHub> hubContext)
     {
         this.robot = robot;
+        this._hubContext = hubContext;
     }
 
     [HttpPost]
@@ -18,6 +23,8 @@ public class RobotController : BaseController
         try
         {
             robot.Forward();
+
+            await this._hubContext.Clients.All.SendAsync("ReceiveMessage", "Michiel", RobotActions.Forward);
 
             return Ok();
         }
@@ -35,6 +42,8 @@ public class RobotController : BaseController
         {
             robot.Reverse();
 
+            await this._hubContext.Clients.All.SendAsync("ReceiveMessage", "Michiel", RobotActions.Reverse);
+
             return Ok();
         }
         catch (Exception ex)
@@ -50,6 +59,8 @@ public class RobotController : BaseController
         try
         {
             robot.Left();
+
+            await this._hubContext.Clients.All.SendAsync("ReceiveMessage", "Michiel", RobotActions.Left);
 
             return Ok();
         }
@@ -67,6 +78,8 @@ public class RobotController : BaseController
         {
             robot.Right();
 
+            await this._hubContext.Clients.All.SendAsync("ReceiveMessage", "Michiel", RobotActions.Right);
+
             return Ok();
         }
         catch (Exception ex)
@@ -82,6 +95,8 @@ public class RobotController : BaseController
         try
         {
             robot.Stop();
+
+            await this._hubContext.Clients.All.SendAsync("ReceiveMessage", "Michiel", RobotActions.Stop);
 
             return Ok();
         }
