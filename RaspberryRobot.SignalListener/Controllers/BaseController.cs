@@ -1,4 +1,4 @@
-﻿namespace RaspberryRobot.SignalHub.Controllers;
+﻿namespace RaspberryRobot.SignalListener.Controllers;
 
 using Microsoft.AspNetCore.Mvc;
 

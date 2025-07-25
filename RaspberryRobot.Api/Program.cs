@@ -1,3 +1,4 @@
+using RaspberryRobot.Api.Hubs;
 using RaspberryRobot.Api.SignalR;
 using RaspberryRobot.Core;
 using RaspberryRobot.Core.Interfaces;
@@ -30,15 +31,17 @@ builder.Services.AddSingleton<MotorActionFactory>();
 builder.Services.AddTransient<IRobot, Robot>();
 
 
-builder.Services.AddSingleton<SignalRClient>(sp =>
-{
-    var logger = sp.GetRequiredService<ILogger<SignalRClient>>();
-    var hubUrl = builder.Configuration.GetValue<string>("SignalR:HubUrl") ?? "https://localhost:7001/messagehub";
-    return new SignalRClient(hubUrl);
-});
+//builder.Services.AddSingleton<SignalRClient>(sp =>
+//{
+//    var logger = sp.GetRequiredService<ILogger<SignalRClient>>();
+//    var hubUrl = builder.Configuration.GetValue<string>("SignalR:HubUrl") ?? "https://localhost:7001/messagehub";
+//    return new SignalRClient(hubUrl);
+//});
 
 // Register the hosted service to start the client
 builder.Services.AddHostedService<SignalRClientHostedService>();
+
+builder.Services.AddSignalR();
 
 var app = builder.Build();
 
@@ -55,5 +58,11 @@ app.UseCors("AllowAllOrigins");
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseRouting();
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapHub<MessageHub>("/messagehub");
+});
 
 app.Run();

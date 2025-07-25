@@ -1,4 +1,4 @@
-using RaspberryRobot.SignalHub.Hubs;
+using RaspberryRobot.SignalListener.SignalR;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +9,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddSignalR();
+builder.Services.AddSingleton<SignalRClient>(sp =>
+{
+    var logger = sp.GetRequiredService<ILogger<SignalRClient>>();
+    var hubUrl = builder.Configuration.GetValue<string>("SignalR:HubUrl") ?? "https://localhost:7001/messagehub";
+    return new SignalRClient(hubUrl);
+});
 
 var app = builder.Build();
 
@@ -25,11 +30,5 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-
-app.UseRouting();
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapHub<MessageHub>("/messagehub");
-});
 
 app.Run();
