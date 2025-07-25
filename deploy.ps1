@@ -1,5 +1,5 @@
 # Make sure this is configured correctly
-$piHost = "192.168.1.41"
+$piHost = "172.20.10.5"
 $piUser = "pi"
 
 $remoteCommands = @"

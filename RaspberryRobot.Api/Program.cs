@@ -1,3 +1,4 @@
+using RaspberryRobot.Api.SignalR;
 using RaspberryRobot.Core;
 using RaspberryRobot.Core.Interfaces;
 using RaspberryRobot.Core.MotorActions;
@@ -27,6 +28,17 @@ builder.Services.AddTransient<ICamera, Camera>();
 builder.Services.AddSingleton<MotorActionFactory>();
 
 builder.Services.AddTransient<IRobot, Robot>();
+
+
+builder.Services.AddSingleton<SignalRClient>(sp =>
+{
+    var logger = sp.GetRequiredService<ILogger<SignalRClient>>();
+    var hubUrl = builder.Configuration.GetValue<string>("SignalR:HubUrl") ?? "https://localhost:7001/messagehub";
+    return new SignalRClient(hubUrl);
+});
+
+// Register the hosted service to start the client
+builder.Services.AddHostedService<SignalRClientHostedService>();
 
 var app = builder.Build();
 

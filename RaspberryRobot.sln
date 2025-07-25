@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RaspberryRobot.Core", "Rasp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Old", "03 Old", "{E05220F6-3A05-4AF1-8B33-2DD59856F1C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaspberryRobot.SignalHub", "RaspberryRobot.SignalHub\RaspberryRobot.SignalHub.csproj", "{C13BB59B-EC7C-4FE0-AA95-772472423776}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{FC6A9F3B-BCAA-4A13-8321-B88991620951}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC6A9F3B-BCAA-4A13-8321-B88991620951}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC6A9F3B-BCAA-4A13-8321-B88991620951}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C13BB59B-EC7C-4FE0-AA95-772472423776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C13BB59B-EC7C-4FE0-AA95-772472423776}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C13BB59B-EC7C-4FE0-AA95-772472423776}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C13BB59B-EC7C-4FE0-AA95-772472423776}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,6 +89,7 @@ Global
 		{9857F77B-F957-4DCF-BBBE-EB2B20E4DF2E} = {E05220F6-3A05-4AF1-8B33-2DD59856F1C4}
 		{69CFD1D3-4F70-4E90-86DC-254D3EDEC215} = {6C34A2C1-CCBF-4A6B-BE8D-73396F9C0D76}
 		{FC6A9F3B-BCAA-4A13-8321-B88991620951} = {D512FE71-6F9C-42F2-BD14-3E967FD88395}
+		{C13BB59B-EC7C-4FE0-AA95-772472423776} = {6C34A2C1-CCBF-4A6B-BE8D-73396F9C0D76}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0B6BD01C-EB88-4C0A-8CE2-25441C15FB16}
