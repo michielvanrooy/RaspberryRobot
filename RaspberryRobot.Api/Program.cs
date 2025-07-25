@@ -1,5 +1,4 @@
 using RaspberryRobot.Api.Hubs;
-using RaspberryRobot.Api.SignalR;
 using RaspberryRobot.Core;
 using RaspberryRobot.Core.Interfaces;
 using RaspberryRobot.Core.MotorActions;
@@ -39,7 +38,7 @@ builder.Services.AddTransient<IRobot, Robot>();
 //});
 
 // Register the hosted service to start the client
-builder.Services.AddHostedService<SignalRClientHostedService>();
+//builder.Services.AddHostedService<SignalRClientHostedService>();
 
 builder.Services.AddSignalR();
 

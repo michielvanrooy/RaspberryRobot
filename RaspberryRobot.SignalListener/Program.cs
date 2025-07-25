@@ -16,6 +16,8 @@ builder.Services.AddSingleton<SignalRClient>(sp =>
     return new SignalRClient(hubUrl);
 });
 
+builder.Services.AddHostedService<SignalRClientHostedService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
