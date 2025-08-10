@@ -1,0 +1,35 @@
+# Make sure this is configured correctly
+$piHost = "192.168.1.41"
+$piUser = "pi"
+
+$remoteCommands = @"
+cd /var/www/html
+sudo rm -rf RobotApi
+unzip net8.0.zip
+rm net8.0.zip
+mv net8.0 RobotApi
+sudo systemctl restart robotApi
+"@
+
+
+Write-Host "*** Starting build..."
+
+dotnet build RaspberryRobot.sln -c Release
+
+Write-Host "*** Build complete. Zipping output..."
+
+Compress-Archive -Path "./RaspberryRobot.SignalListener/bin/Release/net8.0/" -DestinationPath "./net8.0.zip"
+
+Write-Host "*** Copy to Server via putty..."
+
+pscp net8.0.zip "${piUser}@${piHost}:/var/www/html"
+
+Write-Host "*** Delete Zip file..."
+
+Remove-Item -Path "./net8.0.zip"
+
+Write-Host "*** SSH into server..."
+
+ssh "$piUser@$piHost" "$remoteCommands"
+
+Write-Host "*** Done..."
