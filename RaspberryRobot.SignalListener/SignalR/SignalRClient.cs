@@ -3,13 +3,18 @@
 using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR.Client;
+using RaspberryRobot.Core.Constants;
+using RaspberryRobot.Core.Interfaces;
 
 public class SignalRClient
 {
     private readonly HubConnection _connection;
+    private readonly IRobot robot;
 
-    public SignalRClient(string hubUrl)
+    public SignalRClient(string hubUrl, IRobot robot)
     {
+        this.robot = robot;
+
         _connection = new HubConnectionBuilder()
             .WithUrl(hubUrl)
             .WithAutomaticReconnect()
@@ -24,8 +29,24 @@ public class SignalRClient
         {
             Console.WriteLine($"📥 Received from {sender}: {message}");
 
-            //TODO: execute message here
-
+            switch (message)
+            {
+                case RobotActions.Forward:
+                    this.robot.Forward();
+                    break;
+                case RobotActions.Reverse:
+                    this.robot.Reverse();
+                    break;
+                case RobotActions.Left:
+                    this.robot.Left();
+                    break;
+                case RobotActions.Right:
+                    this.robot.Right();
+                    break;
+                default:
+                    this.robot.Stop();
+                    break;
+            }
         });
     }
 
@@ -42,7 +63,7 @@ public class SignalRClient
         }
     }
 
-    //TODO: Delete this, might be ised for photos from camara
+    //TODO: Delete this, might be used for photos from camara
     public async Task SendMessageAsync(string sender, string message)
     {
         try

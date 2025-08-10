@@ -1,9 +1,9 @@
 # Make sure this is configured correctly
-$piHost = "192.168.1.8"
+$piHost = "192.168.1.41"
 $piUser = "pi"
 
 $remoteCommands = @"
-cd /var/www
+cd /var/www/html
 sudo rm -rf RobotApi
 unzip net8.0.zip
 rm net8.0.zip
@@ -18,11 +18,11 @@ dotnet build RaspberryRobot.sln -c Release
 
 Write-Host "*** Build complete. Zipping output..."
 
-Compress-Archive -Path "./RaspberryRobot.Api/bin/Release/net8.0/" -DestinationPath "./net8.0.zip"
+Compress-Archive -Path "./RaspberryRobot.SignalListener/bin/Release/net8.0/" -DestinationPath "./net8.0.zip"
 
 Write-Host "*** Copy to Server via putty..."
 
-pscp net8.0.zip "${piUser}@${piHost}:/var/www"
+pscp net8.0.zip "${piUser}@${piHost}:/var/www/html"
 
 Write-Host "*** Delete Zip file..."
 
