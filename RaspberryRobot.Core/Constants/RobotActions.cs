@@ -2,9 +2,9 @@
 
 public class RobotActions
 {
-    public static string Forward = "forward";
-    public static string Reverse = "reverse";
-    public static string Left = "left";
-    public static string Right = "right";
-    public static string Stop = "stop";
+    public const string Forward = "forward";
+    public const string Reverse = "reverse";
+    public const string Left = "left";
+    public const string Right = "right";
+    public const string Stop = "stop";
 }
